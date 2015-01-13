@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestPerson" tests="8" skipped="0" failures="0" errors="0" timestamp="2015-01-13T22:59:17" hostname="d-108-179-150-76.dhcp4.washington.edu" time="0.013">
+  <properties/>
+  <testcase name="exerciseTheBasics" classname="TestPerson" time="0.004"/>
+  <testcase name="setAgeToBeNegative" classname="TestPerson" time="0.001"/>
+  <testcase name="setNameToNull" classname="TestPerson" time="0.0"/>
+  <testcase name="viewReadabletoString" classname="TestPerson" time="0.0"/>
+  <testcase name="exercisePesonEquals" classname="TestPerson" time="0.0"/>
+  <testcase name="useAgeComparator" classname="TestPerson" time="0.003"/>
+  <testcase name="useNaturalComparison" classname="TestPerson" time="0.0"/>
+  <testcase name="catchPropertyChange" classname="TestPerson" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
