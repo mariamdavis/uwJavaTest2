@@ -1,4 +1,4 @@
-package com.tedneward.example;
+
 
 import java.beans.*;
 import java.util.*;
@@ -86,7 +86,7 @@ public class TestPerson {
     assertEquals(new Person("Michael", 22, 10000), people.get(2));
     assertEquals(new Person("Matthew", 15, 0), people.get(3));
   }
-  
+
   @Test
   public void catchPropertyChange() {
     Person ted = new Person("Ted", 43, 250000);
@@ -94,11 +94,14 @@ public class TestPerson {
     // ============ YOUR CHANGES BEGIN HERE
     // Call addPropertyChangeListener with a PropertyChangedListener
     // that has the following code in it:
-    /*
-    assertEquals("ssn", pce.getPropertyName());
-    assertEquals("", pce.getOldValue());
-    assertEquals("012-34-5678", pce.getNewValue());
-    */
+
+    ted.addPropertyChangeListener(new PropertyChangeListener() {
+      public void propertyChange(PropertyChangeEvent pce) {
+        assertEquals("ssn", pce.getPropertyName());
+        assertEquals("", pce.getOldValue());
+        assertEquals("012-34-5678", pce.getNewValue());
+      }
+    });
 
     // ============ YOUR CHANGES END HERE
     
